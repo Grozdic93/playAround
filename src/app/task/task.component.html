@@ -1,0 +1,21 @@
+<!-- @if(task.importance > 2){
+    <div class="output">
+        <p>{{ task.name }}</p>
+        <p class="text-danger">{{ task.importance }}</p>
+    </div>
+}@else{
+    <div class="output">
+        <p>{{ task.name }}</p>
+        <p class="text-success">{{ task.importance }}</p>
+    </div>
+} -->
+
+<div class="output">
+    <p>{{ task.name }}</p>
+    @if(task.importance > 2){
+        <p class="text-danger">{{ task.importance }}</p>
+    }@else{
+        <p class="text-success">{{ task.importance }}</p>
+    }
+  
+</div>
